@@ -1,0 +1,92 @@
+body {
+    background-color: hsl(180, 100%, 35%);
+}
+
+.header {
+    width: fit-content;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+    border-radius: 15px;
+    font-size: 32px;
+}
+
+#capturedDiv {
+    float: right;
+}
+
+#webcamDiv {
+    float: left;
+}
+
+#capturedImage,
+#webcamImage {
+    width: 392px;
+    height: 294px;
+    border-width: 10px;
+    border-color: black;
+    border-style: dashed;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#handGesturePredictionName, #handGesturePredictionIcon {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#handGesturePredictionName {
+    font-weight: 550;
+}
+
+label {
+    background-color: rgb(230, 230, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+
+.palm {
+    margin: 0;
+    width: 9rem;
+    height: 9rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    background-color: black;
+}
+
+.finger {
+    background-color: black;
+    width: 1.25rem;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    margin: 0;
+}
+
+.pinkie {
+    transform: translateX(310%);
+    height: 4rem;
+}
+
+.ring {
+    transform: translate(133%, 80%);
+    height: 5rem;
+}
+
+.middle {
+    transform: translate(-90%, 150%);
+    height: 6rem;
+}
+
+.pointer {
+    transform: translate(-310%, 300%);
+    height: 5rem;
+}
+
+.thumb {
+    height: 5rem;
+    transform: translate(-400%, -125%) rotate(315deg);
+}
